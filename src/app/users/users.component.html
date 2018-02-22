@@ -1,0 +1,10 @@
+<div class="container">
+  
+  <h1 class="text-center">Bluestacks Users</h1>
+  <p class="text-center">Please select any user:</p>
+  <div class="col-xs-12 col-sm-6" *ngFor="let user of allData; let i = index">
+    <div class="well text-center"(click)="showDetails(i)">
+      <img width="100" height="80" class="img-circle" src="{{user.userDetails.user_logo}}" alt=""> <span>{{user.userName}}</span>
+    </div>
+  </div>
+</div>

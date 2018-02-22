@@ -1,0 +1,62 @@
+<div class="container">
+  <p routerLink='/' class="btn btn-primary">Back To Main</p>
+  <h2 class="text-center">Your
+    <b>Account</b>
+  </h2>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <img height="150" width="150" src="{{user_image}}" alt="">
+    </div>
+    <div class="col-xs-12 col-sm-8">
+      <h3>{{user_name}}</h3>
+      <p>Partner Since:
+        <b>{{user_since}}</b>
+      </p>
+      <p>Status:
+        <img height="40" width="40" src="{{user_status_image}}" alt="">
+        <span>
+          <b>{{user_status}}</b>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <h2 style="color:green">2016 TOTAL SPEND</h2>
+    <div class="progress dt">
+      <div class="progress-bar" role="progressbar" attr.aria-valuenow="{{user_year_spend}}" aria-valuemin="0" attr.aria-valuemax="{{user_total_spend}}"
+         [style.width]="user_storage_spend_per">
+        ${{user_year_spend}}
+      </div>
+      <span>out of ${{user_total_spend}}</span>
+    </div>
+    <div class="col-xs-2 col-sm-2 text-center">
+      <span class="glyphicon glyphicon-inbox"></span>
+      <p>Storage Used</p>
+    </div>
+    <div class="col-xs-10 col-sm-10 dt">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" attr.aria-valuenow="{{user_storage_spend}}" aria-valuemin="0" attr.aria-valuemax="150000"
+        [style.width]="user_storage_spend_per">
+          ${{user_storage_spend}}
+        </div>
+        <span>out of $150000</span>
+      </div>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-xs-2 col-sm-2 text-center">
+      <span class="	glyphicon glyphicon-download"></span>
+      <p>Server Usage</p>
+    </div>
+    <div class="col-xs-10 col-sm-10 dt">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" attr.aria-valuenow="{{user_server_spend}}" aria-valuemin="0" attr.aria-valuemax="150000"
+        [style.width]="user_server_spend_per">
+          ${{user_server_spend}}
+        </div>
+        <span>out of $150000</span>
+      </div>
+    </div>
+  </div>
+</div>

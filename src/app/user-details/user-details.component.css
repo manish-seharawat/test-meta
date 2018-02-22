@@ -1,0 +1,41 @@
+.container {
+    padding-top: 30px;
+}
+
+.row {
+    margin-top: 25px;
+}
+
+.progress-bar{
+    color: gray;
+    background-color: #66a3ff;
+}
+.progress-bar,progress, .exp, .dt{
+    font-size: 20px;
+    line-height: 55px;
+}
+
+@media only screen and (max-width: 500px) {
+   
+    .progress-bar,progress, .exp, .dt{
+        font-size: 15px;
+        line-height: 55px;
+    }
+    
+}
+.exp span:first-child {
+    color: aliceblue;
+    float: left;
+}
+
+.exp span:last-child, .dt span {
+    float: right;
+}
+
+.glyphicon {
+    font-size: 40px;
+}
+
+.progress {
+    height: 50px;
+}
